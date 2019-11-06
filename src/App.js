@@ -2,20 +2,26 @@ import React, { Component } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import ListItem from "./components/listItem";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBold,
+  faItalic,
+  faUnderline
+} from "@fortawesome/free-solid-svg-icons";
 
 class App extends Component {
   state = {
     list: [
       {
-        label: "faBold",
+        label: faBold,
         id: 1
       },
       {
-        label: "faItalic",
+        label: faItalic,
         id: 2
       },
       {
-        label: "faUnderline",
+        label: faUnderline,
         id: 3
       }
     ]
@@ -33,15 +39,6 @@ class App extends Component {
                 label={listItem.label}
               />
             ))}
-            {/* <li className="list-group-item">
-              <FontAwesomeIcon icon={faBold} />
-            </li>
-            <li className="list-group-item">
-              <FontAwesomeIcon icon={faItalic} />
-            </li>
-            <li className="list-group-item">
-              <FontAwesomeIcon icon={faUnderline} />
-            </li> */}
           </ul>
         </div>
         <div className="card-body">

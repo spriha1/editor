@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBold,
-  faItalic,
-  faUnderline
-} from "@fortawesome/free-solid-svg-icons";
+// import {
+//   faBold,
+//   faItalic,
+//   faUnderline
+// } from "@fortawesome/free-solid-svg-icons";
 
 class ListItem extends Component {
   state = {
@@ -21,7 +21,7 @@ class ListItem extends Component {
     const { selected } = this.state;
     return (
       <button
-        className={selected ? "btn btn-secondary" : "btn btn-light"}
+        className={selected ? "btn btn-link" : "btn btn-light"}
         onClick={() => this.handleChange()}
       >
         <li className="list-group-item">
